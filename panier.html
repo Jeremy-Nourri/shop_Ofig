@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique OFig - Vente de figurines Final Fantasy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container-title">
+            <h1 class="header__title">oFig</h1>
+            <h2 class="header__sub-title">Figurines et statuettes</h2>
+        </div>
+
+        <div class="header__theme">
+            <h2 class="header__theme-title">
+                Vous avez
+                <strong class="header__theme-brand">2 produits</strong> dans votre panier
+            </h2>
+            <nav class="header__icons">
+                <a href="index.html" class="header__link">
+                    <img class="header__icon" src="images\icon-home.png" alt="lien vers la page accueil">
+                </a>
+                <a href="panier.html" class="header__link">
+                    <img class="header__icon" src="images\caddie.png" alt="lien vers la page caddie">
+                </a>
+            </nav>
+        </div>
+        </div>
+    </header>
+
+    <main class="main-bag">
+
+        <form action="" method="post" class="main-bag__form">
+            <section class="form__section">
+
+                <table class="cart-table">
+                    <caption class="cart-table__title">Votre panier</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="cart-table__cell-header">Figurine</th>
+                            <th scope="col" class="cart-table__cell-header">Prix unitaire</th>
+                            <th scope="col" class="cart-table__cell-header">Quantité</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="cart-table__row">
+                            <td class="cart-table__cell">Cloud Strife</td>
+                            <td class="cart-table__cell">59 €</td>
+                            <td class="cart-table__cell">
+                                <input type="number" name="quantity1" id="quantity1" class="cart__article-number" value="1" min="0" >
+                                <label for="quantity1">
+                                    <a href="#" class="cart-table__delete-link">Supprimer</a>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr class="cart-table__row">
+                            <td class="cart-table__cell">Tifa Lockhart</td>
+                            <td class="cart-table__cell">69 €</td>
+                            <td class="cart-table__cell">
+                                <input type="number" name="quantity2" id="quantity2" class="cart__article-number" value="1" min="0" >
+                                <label for="quantity2">
+                                    <a href="#" class="cart-table__delete-link">Supprimer</a>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr class="cart-table__row">
+                            <td class="cart-table__cell">Barret Wallace</td>
+                            <td class="cart-table__cell">69 €</td>
+                            <td class="cart-table__cell">
+                                <input type="number" name="quantity3" id="quantity3" class="cart__article-number" value="1" min="0" >
+                                <label for="quantity3">
+                                    <a href="#" class="cart-table__delete-link">Supprimer</a>
+                                </label>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot class="cart-table__footer">
+                        <tr>
+                            <td colspan="2" class="cart-table__cell cart__amount-label">Total de la commande :</td>
+                            <td class="cart-table__cell cart__price">197 €</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+
+            <section class="form__section">
+
+                <div class="address">
+                    <div class="address__item">
+
+                        <div class="form__input-group">
+                            <h3 class="address__item-title">Où souhaitez-vous être livré ?</h3>
+
+                            <div class="form__row">
+                                <input type="radio"
+                                    value="current"
+                                    name="currentAddress"
+                                    id="currentAddress-1"
+                                    class="form__input-radio"
+                                >
+                                <label for="currentAddress-1" class="form__input-radio-and-checkbox-label">
+                                    Mon adresse courante
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <input type="radio"
+                                    value="other"
+                                    name="currentAddress"
+                                    id="currentAddress-2"
+                                    class="form__input-radio"
+                                >
+                                <label for="currentAddress-2" class="form__input-radio-and-checkbox-label">
+                                    Autre adresse
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <div class="form__input-group">
+                            <h3 class="address__item-title">Options</h3>
+
+                            <div class="form__row">
+                                <input type="checkbox"
+                                    value="1"
+                                    name="followBySms"
+                                    id="followBySms"
+                                    class="form__input-checkbox"
+                                >
+                                <label for="followBySms" class="form__input-radio-and-checkbox-label">
+                                    Suivi de livraison par sms (inclus)
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <input type="checkbox"
+                                    value="1"
+                                    name="moneyBack"
+                                    id="moneyBack"
+                                    class="form__input-checkbox"
+                                >
+                                <label for="moneyBack" class="form__input-radio-and-checkbox-label">
+                                    Satisfait ou remboursé (+ 2 euros)
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <input type="checkbox"
+                                    value="1"
+                                    name="guarantee"
+                                    id="guarantee"
+                                    class="form__input-checkbox"
+                                >
+                                <label for="guarantee" class="form__input-radio-and-checkbox-label">
+                                    Garantie 2 ans (+ 10 euros)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="address__item">
+                        <div class="form__input-group">
+                            <h3 class="address__item-title">Adresse</h3>
+
+                            <div class="form__double-row">
+                                <label for="street" class="form__input-text-label">Rue</label>
+                                <input type="text" class="form__input-text" name="street" id="street">
+                            </div>
+
+                            <div class="form__double-row">
+                                <label for="zipcode" class="form__input-text-label">Code postal</label>
+                                <input type="text" class="form__input-text" name="zipcode" id="zipcode">
+                            </div>
+
+                            <div class="form__double-row">
+                                <label for="city" class="form__input-text-label">Ville</label>
+                                <input type="text" class="form__input-text" name="city" id="city">
+                            </div>
+                        </div>
+
+                        <div class="form__input-group">
+                            <h3 class="address__item-title">Informations complémentaires</h3>
+
+                            <div class="form__double-row">
+                                <label for="complement" class="form__input-text-label">Interphone, bâtiment, etc.</label>
+                                <textarea name="complement" id="complement" class="form__textarea"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form__section">
+                <div class="amount">
+                    <div class="form__amount__item cart__amount-label">
+                        Montant total à régler :
+                    </div>
+
+                    <div class="form__amount__item cart__price">
+                        197 €
+                    </div>
+                </div>
+            </section>
+
+            <section class="form__section">
+                <div class="button">
+                    <button type="button" class="button__item form__button">
+                        Continuer vos achats
+                    </button>
+
+                    <button type="submit" class="button__item form__button form__button--red">
+                        Valider et payer
+                    </button>
+                </div>
+            </section>
+
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        oFig - toutes les images sont sous copyright SquareEnix
+    </footer>
+
+</body>
+</html>
